@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!--让浏览器使用最新的IE内核进行渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口宽度等于当前设备宽度，默认缩放比为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 允许默认手机-->
+    <meta name="format-detection" content="telephone=yes">
+    <!-- 网站描述及关键词 -->
+    <meta name="description" content="杏璞健康/让生活多点健康" />
+    <meta name="keywords" content="杏璞健康/让生活多点健康" />
+    <title>杏璞庄园官网</title>
+    <!-- 导入Bootstrap核心CSS文件 -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/owl.carousel.css" rel="stylesheet">
+    <link href="style/owl.theme.css" rel="stylesheet">
+    <link href="style/base.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <!-- jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 公共 <--></-->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/public.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-box" role="navigation">
+        <div class="container"> 
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle hamburger hamburger-close" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar hamburger-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar hamburger-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-logo" href="#">
+                <img src="picture/导航栏logo.png" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">认识杏璞</a></li>
+                <li><a href="#">杏璞文化</a></li>
+                <li><a href="#">杏璞育儿</a></li>
+                <li><a href="#">健康团队</a></li>
+                <li><a href="#">杏璞产品</a></li>
+                <li><a href="#">杏璞发布</a></li>
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="owl-banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                    <img class="owl-lazy" data-src="picture/首页banner.png" src="picture/首页banner.png" alt="banner"/>
+                </a>
+            </div>
+                    <div class="item">
+                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                    <img class="owl-lazy" data-src="picture/首页banner.png" src="picture/首页banner.png" alt="banner"/>
+                </a>
+            </div>
+                    <div class="item">
+                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                    <img class="owl-lazy" data-src="picture/首页banner.png" src="picture/首页banner.png" alt="banner"/>
+                </a>
+            </div>
+                    <div class="item">
+                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                    <img class="owl-lazy" data-src="picture/首页banner.png" src="picture/首页banner.png" alt="banner"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title">
+            <div class="center-index-title">
+                <h1>XING PU RELEASE</h1>
+                <p><span>杏璞发布</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-lg-6 col-md-10 col-sm-10 col-xs-12 xs-75">
+               <div class="crowd-left-img">
+                   <div class="owl-banner2">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="owl-lazy" data-src="picture/首页新闻切图.png" src="picture/首页新闻切图.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="owl-lazy" data-src="picture/首页新闻切图.png" src="picture/首页新闻切图.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="owl-lazy" data-src="picture/首页新闻切图.png" src="picture/首页新闻切图.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="owl-lazy" data-src="picture/首页新闻切图.png" src="picture/首页新闻切图.png" alt="banner"/>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-10 col-sm-10 col-xs-12 xs-75 box-shadow">
+               <div class="crowd-right-list">
+                  <div class="crowd-right-index-list">
+                      <div>
+                           <div class="crowd-time">2020.11.06</div>
+                           <h2>双11大幕开启，杏璞品牌11周年震撼献礼</h2>
+                           <p>近年来，“国潮复兴”的口号被越来越多的媒体提起，根据去年《百度国潮骄傲大数据》显示，在2009到2019的十年...</p>
+                      </div>
+                      <div>
+                           <ul>
+                               <li><a href="">杏璞庄园与慧学教育达成战略合作</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞品牌受邀参加2020第六届母婴生态大会</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞受邀参加樱桃严选找货节，为品牌赋能</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞受邀参加樱桃严选找货节，为品牌赋能</a><span>2020.11.06</span></li>
+                           </ul>
+                      </div>
+                  </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title">
+            <div class="center-index-title">
+                <h1>COMPREHEND XING PU</h1>
+                <p><span>杏璞发布</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two">
+               <div class="crowd-left-jianjie">
+                  <div class="crowd-left-index-jianjie">
+                      <div>
+                           <h2>企业简介</h2>
+                           <div class="crowd-line"></div>
+                           <p>
+                              <span>南京杏璞庄园在成立前期，缔造者们就开始对肌肤护理市场进行深入的分析研究，对产品的定位进行反复斟酌和比对，在总结单一护肤产品的不足以及现有功能性护肤产品的成分特点后，最终将目光聚焦在天然草本上。</span>
+                              <span>天然草本在安全性方面有着其他成分无可比拟和替代的优势，安全是用户最关心的话题，同时也是产品的生命线。其次，中草本在排毒，调理，滋养肌肤等方面有着独到的天然优势。因此，将产品定位于天然草本护肤，安全高效，同时实现多效合一，成为杏璞庄园从事</span>
+                           </p>
+                           <div><span><a href="">查看详情</a></span></div>
+                      </div>
+                  </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two">
+               <div class="crowd-right-img">
+                   <img class="lazy" data-original="picture/首页公司简介切图.png" src="picture/lazy.gif" alt="">
+               </div>
+           </div>
+        </div>
+    </div>
+  </body>
+</html>

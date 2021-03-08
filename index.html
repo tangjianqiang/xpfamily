@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!--让浏览器使用最新的IE内核进行渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口宽度等于当前设备宽度，默认缩放比为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 允许默认手机-->
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 网站描述及关键词 -->
+    <meta name="description" content="{pboot:sitedescription}" />
+    <meta name="keywords" content="{pboot:sitekeywords}" />
+    <title>{pboot:sitetitle}</title>
+    <!-- 字体库-->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <!-- 导入Bootstrap核心CSS文件 -->
+    <link href="{pboot:sitetplpath}/style/bootstrap.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/bootstrapValidator.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="{pboot:sitetplpath}/style/animate.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.carousel.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.theme.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/style.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/index.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/base.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="{pboot:sitetplpath}/js/jquery.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrap.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrapValidator.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/owl.carousel.js"></script>
+    <script src="{pboot:sitetplpath}/js/jquery.lazyload.js"></script>
+    <script src="{pboot:sitetplpath}/js/wow-animate.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/public.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?79ace6ee471d9f355ca883b8f1cbd525";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-box" role="navigation">
+        <div class="container"> 
+        {include file=comm/head.html}
+        <div class="collapse navbar-collapse wow fadeInUp" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="https://{pboot:sitedomain}/">首页</a></li>
+                <li><a href="https://{pboot:sitedomain}/about/">认识杏璞</a></li>
+                <li><a href="https://{pboot:sitedomain}/culture/">杏璞文化</a></li>
+                <li><a href="https://{pboot:sitedomain}/yuer/">杏璞育儿</a></li>
+                <li><a href="https://{pboot:sitedomain}/team/">健康团队</a></li>
+                <li><a href="https://{pboot:sitedomain}/product/">杏璞产品</a></li>
+                <li><a href="https://{pboot:sitedomain}/news/">杏璞发布</a></li>
+                <li><a href="https://{pboot:sitedomain}/recruit/">人才招聘</a></li>
+                <li><a href="https://{pboot:sitedomain}/contact/">联系我们</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="owl-banner">
+        <div class="owl-carousel owl-theme">
+            {pboot:slide num=4 gid=1}
+         <div class="item">
+                <a href="https://{pboot:sitedomain}[slide:link]" class="slide-item" target="_blank" style="background-image:url([slide:src]);">                   
+                    <img class="lazyOwl" data-src="wap-[slide:src]" src="wap-[slide:src]" alt="banner"/>
+                </a>
+            </div>
+         {/pboot:slide} 
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>XING PU RELEASE</h1>
+                <p><span>杏璞发布</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-75 pad-rt wow fadeInUp">
+               <div class="crowd-left-img">
+                   <div class="owl-banner2">
+                        <div class="owl-carousel owl-theme">
+                          {pboot:list scode=2 num=4 order=date}
+                            <div class="item">
+                                <a href="https://{pboot:sitedomain}[list:link]" class="slide-item" target="_blank">
+                                    <img class="lazyOwl" data-src="[list:ico]" src="[list:ico]" alt="banner"/>
+                                </a>
+                            </div>
+                           {/pboot:list}
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-75 box-shadow wow fadeInUp">
+               <div class="crowd-right-list">
+                  <div class="crowd-right-index-list">
+                      <div>
+                           {pboot:list scode=2 num=1 order=date}
+                              <a href="https://{pboot:sitedomain}[list:link]">
+                                 <div class="crowd-time">[list:date style=Y-m-d]</div>
+                                 <h2>[list:title len=45 more='...']</h2>
+                                 <p>[list:description len=45 more='...']</p>
+                             </a>
+                           {/pboot:list}
+                      </div>
+                      <div>
+                           <ul> 
+                               {pboot:list scode=2 num=4 order=date}
+                                    <li><a href="https://{pboot:sitedomain}[list:link]">[list:title len=20 more='...']</a><span>[list:date style=Y-m-d]</span></li>
+                               {/pboot:list}
+                           </ul>
+                      </div>
+                  </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>COMPREHEND XING PU</h1>
+                <p><span>认识杏璞</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two pad-lt wow fadeInUp">
+               <div class="crowd-left-jianjie">
+                  <div class="crowd-left-index-jianjie">
+                      <div>
+                           <h2>企业简介</h2>
+                           <div class="crowd-line"></div>
+                           <p>
+                              <span>南京杏璞庄园在成立前期，缔造者们就开始对肌肤护理市场进行深入的分析研究，对产品的定位进行反复斟酌和比对，在总结单一护肤产品的不足以及现有功能性护肤产品的成分特点后，最终将目光聚焦在天然草本上。</span><br>
+                              <span class="max-768">天然草本在安全性方面有着其他成分无可比拟和替代的优势，安全是用户最关心的话题，同时也是产品的生命线。其次，中草本在排毒，调理，滋养肌肤等方面有着独到的天然优势。因此，将产品定位于天然草本护肤，安全高效，同时实现多效合一，成为杏璞庄园从事...</span>
+                           </p>
+                           {pboot:nav num=1 i=1}<div class="crowd-details"><span><a href="https://{pboot:sitedomain}[nav:link]">查看详情</a></span></div>{/pboot:nav}
+                      </div>
+                  </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two box-shadow wow fadeInUp">
+               <div class="crowd-right-img">
+                   {pboot:sort scode=3}<a href="https://{pboot:sitedomain}[sort:link]"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-about-one.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt=""></a>{/pboot:sort}
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container minWidth">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>HEALTH TEAM</h1>
+                <p><span>健康团队</span></p>
+            </div>
+        </div>
+        <div class="owl-team">
+              <div class="owl-carousel owl-theme">
+                  <div class="item">
+                      <div class="row">
+                          {pboot:list scode=6 i=20 num=6 order='id asc'}
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href="https://{pboot:sitedomain}/team/"><img class="lazy" data-original="[list:ico]" src="{pboot:sitetplpath}/picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>[list:title len=25 more='...']</h2>
+                                       <p>[list:description len=45 more='...']</p>
+                                  </div>
+                              </div>
+                          </div>
+                          {/pboot:list}
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          {pboot:list scode=6 i=20 num=6 order='id asc'}
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href="https://{pboot:sitedomain}/team/"><img class="lazy" data-original="[list:ico]" src="{pboot:sitetplpath}/picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>[list:title len=25 more='...']</h2>
+                                       <p>[list:description len=45 more='...']</p>
+                                  </div>
+                              </div>
+                          </div>
+                          {/pboot:list}
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>HEALTHY PARENTING</h1>
+                <p><span>健康育儿</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 index-four wow fadeInLeft">
+                <div class="crowd-yuer-box">
+                     <div class="crowd-left-yuer-ii">
+                         <div class="yuer-ii-iiker-l">
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                   <a href="https://{pboot:sitedomain}[sort:link]">
+                                       <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r1.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                       <div class="yuer-ii-mask">
+                                               <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                               <span>宝宝湿疹</span>
+                                       </div> 
+                                   </a>
+                              </div>
+                              {/pboot:sort} 
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r5.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>肌肤健康</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                              {/pboot:sort} 
+                         </div>
+                         <div class="yuer-ii-iiker-r">
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r2.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>辅食食谱</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                              {/pboot:sort} 
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r6.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>宝宝睡眠</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                              {/pboot:sort} 
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 index-four wow fadeInRight">
+                <div class="crowd-yuer-box">
+                    <div class="crowd-right-yuer-ii">
+                         <div class="yuer-ii-iiker-l">
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                   <a href="https://{pboot:sitedomain}[sort:link]">
+                                       <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r3.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                       <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>育儿图谱</span>
+                                       </div> 
+                                   </a>
+                              </div>
+                              {/pboot:sort}
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r7.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>母婴推荐</span>
+                                       </div>
+                                  </a>
+                              </div>
+                              {/pboot:sort}
+                         </div>
+                         <div class="yuer-ii-iiker-r">
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r4.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>产后修复</span>
+                                      </div>
+                                  </a>
+                              </div>
+                              {/pboot:sort}
+                              {pboot:sort scode=5}
+                              <div class="yuer-ii-block">
+                                  <a href="https://{pboot:sitedomain}[sort:link]">
+                                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/index-yuer-r8.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="{pboot:sitetplpath}/picture/xingpu-mask-logo.png" alt="">
+                                            <span>启蒙音乐</span>
+                                      </div>
+                                  </a>
+                              </div>
+                              {/pboot:sort}
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>PRODUCT</h1>
+                <p><span>杏璞产品</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-lg index-five wow fadeInUp">
+                {pboot:sort scode=1}
+                <div class="crowd-product-box">
+                     <a href="https://{pboot:sitedomain}[sort:link]"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-pro-p1.png" src="{pboot:sitetplpath}/picture/lazy.gif" ></a>
+                </div>
+                {/pboot:sort}
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-mg index-five wow fadeInUp">
+                <div class="crowd-product-box">
+                     {pboot:sort scode=1}
+                     <div class="product-box-ii pad-al box-shadow">
+                          <h2>专为宝宝订制</h2>
+                          <p>杏璞庄园系列产品成分天然，各批次均通过国家权威检测机构严苛检测，绿色安全，品质保障。 </p>
+                          <div class="crowd-details"><a href="https://{pboot:sitedomain}[sort:link]">查看详情</a></div>
+                     </div>
+                     <div class="product-mid-ii"><a href="https://{pboot:sitedomain}[sort:link]"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-pro-p3.png" src="{pboot:sitetplpath}/picture/lazy.gif" ></a></div>
+                     {/pboot:sort}
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-rg index-five wow fadeInUp">
+                <div class="crowd-product-box">
+                     {pboot:sort scode=1}
+                     <div class="product-box-ii mag-al">
+                         <a href="https://{pboot:sitedomain}[sort:link]"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-pro-p2.png" src="{pboot:sitetplpath}/picture/lazy.gif" ></a>
+                     </div>
+                     <div class="product-box-ii">
+                         <a href="https://{pboot:sitedomain}[sort:link]"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-pro-p4.png" src="{pboot:sitetplpath}/picture/lazy.gif" ></a>
+                     </div>
+                     {/pboot:sort}
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>CONTACT US</h1>
+                <p><span>联系我们</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12 col-form-lg index-six wow fadeInUp">
+                <div class="crowd-content-box">
+                    <div class="content-box-ii">
+                         <a href="https://{pboot:sitedomain}/contact/68.html"><img class="lazy" data-original="{pboot:sitetplpath}/picture/index-contact-map.png" src="{pboot:sitetplpath}/picture/lazy.gif" ></a>
+                         <div class="crowd-mask">
+                             客服热线:{pboot:companyphone}&nbsp;公司地址:{pboot:companyaddress}
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-form-rg index-six wow fadeInUp">
+                <div class="crowd-content-box">
+                     <div class="content-form-control">
+                          <form class="form-horizontal" role="form" id="form-test" method="post">
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="name" name="username" placeholder="姓名:">
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="tel" name="telphone" placeholder="电话:">
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control message-box" id="message" name="message" placeholder="留言:">
+                                   </div>
+                               </div>
+                               <button type="submit" name="submit" class="btn btn-default offer-sub" id="offer-sub">立即提交</button>
+                          </form>
+                     </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="container-footer foot-wrap">
+         {include file=comm/foot.html}
+    </footer>
+  </body>
+</html>

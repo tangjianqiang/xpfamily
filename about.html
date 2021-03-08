@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!--让浏览器使用最新的IE内核进行渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口宽度等于当前设备宽度，默认缩放比为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 允许默认手机-->
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 网站描述及关键词 -->
+    <meta name="description" content="{sort:description}" />
+    <meta name="keywords" content="{sort:keywords}" />
+    <title>{sort:title}</title>
+    <!-- 字体库-->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <!-- 导入Bootstrap核心CSS文件 -->
+    <link href="{pboot:sitetplpath}/style/bootstrap.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/bootstrapValidator.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="{pboot:sitetplpath}/style/animate.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/swiper.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.carousel.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.theme.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/style.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/index_2.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/base.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="{pboot:sitetplpath}/js/jquery.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrap.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrapValidator.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/owl.carousel.js"></script>
+    <script src="{pboot:sitetplpath}/js/jquery.lazyload.js"></script>
+    <script src="{pboot:sitetplpath}/js/wow-animate.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/public.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-box" role="navigation">
+        <div class="container"> 
+        {include file=comm/head.html}
+        <div class="collapse navbar-collapse wow fadeInUp" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{pboot:sitepath}/">首页</a></li>
+                <li class="active"><a href="/about/">认识杏璞</a></li>
+                <li><a href="/culture/">杏璞文化</a></li>
+                <li><a href="/yuer/">杏璞育儿</a></li>
+                <li><a href="/team/">健康团队</a></li>
+                <li><a href="/product/">杏璞产品</a></li>
+                <li><a href="/news/">杏璞发布</a></li>
+                <li><a href="/recruit/">人才招聘</a></li>
+                <li><a href="/contact/">联系我们</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container-about">
+        <div class="xingpu-about">{pboot:sort scode=3}
+             <div class="banner-maxWidth100">
+                  <a href="[sort:outlink]" class="slide-item" style="background-image:url({sort:pic});">
+                       <img class="lazy" data-original="{sort:ico}" src="{pboot:sitetplpath}/icture/lazy.gif" alt="">
+                  </a>
+             </div>{/pboot:sort}
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>COMPANY PROFILE</h1>
+                <p><span>企业简介</span></p>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12 col-sm-12 col-xs-12 pad-30 about-one wow fadeInUp">
+                  <div class="about-del-intro">
+                       <p>南京杏璞庄园在成立前期，缔造者们就开始对肌肤护理市场进行深入的分析研究，对产品的定位进行反复斟酌和比对，在总结单一护肤产品的不足以及现有功能性护肤产品的成分特点后，最终将目光聚焦在天然草本上。 </p>
+                       <p class="text-indent">天然草本在安全性方面有着其他成分无可比拟和替代的优势，安全是用户最关心的话题，同时也是产品的生命线。其次，中草本在排毒，调理，滋养肌肤等方面有着独到的天然优势。因此，将产品定位于天然草本护肤，安全高效，同时实现多效合一，成为杏璞庄园从事新品研发的主导方向。 </p>
+                       <p class="text-indent">在这一产业发展背景下，南京杏璞庄园于2014年正式成立。作为国内较早成立的专注于集草本护肤产品研发销售与一体的大型现代化企业，南京杏璞庄园倡导天然草本护肤。十年来坚持做草本护肤，专注国人肌肤健康解决方案，始终将安全放在首位，秉承用天然草本打造天然健康肌肤的理念。  </p>
+                       <p class="text-indent">南京杏璞庄园拥有1家中医研究院7家子公司,专业肌肤样本分析实验室和2大科研基地，一切研发从肌肤样本出发，研究方向充分建立在科学的数据基础之上。从婴幼儿到成人肌肤护理，我们提供完善的肌肤健康解决方案。产品严格遵循不同年龄段人群的肌肤生理特点，按照调—养—护三步走方略，对肌肤进行循序渐进的全面护理。 </p>
+                       <p class="text-indent">为保障天然草本原料的品质和持续供应，南京杏璞庄园在全球开辟10大草本种植基地，从气候、环境、土壤及水质多个方面全面保障草本生长所必须的优质条件。除此之外，南京杏璞庄园陪伴用户共同成长，搭建专业的售后服务平台，产品只是帮助用户实现肌肤护理的第一步，为用户搭建长效肌肤护理体系是杏璞庄园服务平台的有效延伸。 </p>
+                       <p class="text-indent">南京杏璞庄园从原料到服务，从源头到结果，呈现清晰的脉络走向，将全力以赴为国人提供精准的护肤指导体系，打造护肤领域的新型领军企业！</p>
+                  </div>
+             </div>
+             <div class="col-md-12 col-sm-12 col-sx-12 mag-55 about-one wow fadeInUp">
+                  <div class="about-del-img">
+                       <img class="lazy" data-original="{pboot:sitetplpath}/picture/about-computy-one.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                  </div>
+             </div>
+        </div>
+    </div>
+    <div class="container">
+       <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>CORPORATE CULTURE</h1>
+                <p><span>企业文化</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 pad-l-75 about-two wow fadeInLeft">
+                 <div class="about-del-img2">
+                      <img class="lazy" data-original="{pboot:sitetplpath}/picture/about-culture-img.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                 </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 pad-r-75 about-two wow fadeInRight">
+                <div class="about-del-prot">
+                      <p>杏璞服务宗旨：急用户所急，想用户所想，爱用户所爱</p>
+                      <p>杏璞经营宗旨：护自根源，养以自然 </p>
+                      <p>杏璞企业文化：继承传统，尊重科学</p>
+                      <p>企业价值观：真材实料、追求自然</p>
+                      <p>杏璞人才观：人适其位，才适其用</p>
+                      <p>杏璞企业使命：创中国品牌，助力中国梦！ </p>
+                      <p>杏璞企业愿景：杏璞百年，相伴成长</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>COMPANY PROFILE</h1>
+                <p><span>荣誉资质</span></p>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-10 col-sm-10 col-xs-10 maxWidth60 about-three wow fadeInUp">
+                <div class="about-del-swiper">
+                    <div class="swiper-container">
+                         <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                    <img class="lazy" data-original="{pboot:sitetplpath}/picture/xingpu-zz1.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img class="lazy" data-original="{pboot:sitetplpath}/picture/xingpu-zz2.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img class="lazy" data-original="{pboot:sitetplpath}/picture/xingpu-zz3.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                              </div>
+                         </div>
+                         <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1> BUSINESS PARTERS</h1>
+                <p><span>合作伙伴</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 mag-auto mag-20 about-four">
+                <div class="about-del-part">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.2s" data-original="{pboot:sitetplpath}/picture/taobao.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.3s" data-original="{pboot:sitetplpath}/picture/tianmao.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.4s" data-original="{pboot:sitetplpath}/picture/jd.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.5s" data-original="{pboot:sitetplpath}/picture/bbs.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.6s" data-original="{pboot:sitetplpath}/picture/dbzy.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 mag-auto mag-20 about-four">
+                <div class="about-del-part">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.2s" data-original="{pboot:sitetplpath}/picture/yrw.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.3s" data-original="{pboot:sitetplpath}/picture/rj.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.4s" data-original="{pboot:sitetplpath}/picture/ms.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.5s" data-original="{pboot:sitetplpath}/picture/hn.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.6s" data-original="{pboot:sitetplpath}/picture/jx.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 mag-auto about-four">
+                <div class="about-del-part">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.2s" data-original="{pboot:sitetplpath}/picture/rht.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.3s" data-original="{pboot:sitetplpath}/picture/bx.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.4s" data-original="{pboot:sitetplpath}/picture/jk.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.5s" data-original="{pboot:sitetplpath}/picture/rf.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                     <img class="lazy wow fadeInUp" data-wow-delay="0.6s" data-original="{pboot:sitetplpath}/picture/ms1.png" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{pboot:sitetplpath}/js/swiper.min.js"></script>
+    <script>
+    /*荣誉资质*/
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          autoplay:true,//自动播放
+          delay:3000, //自动切换的时间间隔，单位ms
+          disableOnInteraction :false //如果设置为false，用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+    });
+    </script>
+    <footer class="container-footer foot-wrap">
+         {include file=comm/foot.html}
+    </footer>
+  </body>
+</html>

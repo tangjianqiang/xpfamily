@@ -1,0 +1,41 @@
+.navbar-box li:not(:nth-child(2)) a{
+  font-size: 18px;
+  transition:color 0.5s;
+  -webkit-transition:color 0.5s;
+  transition:background 0.5s;
+  -moz-transition:background 0.5s;
+  -webkit-transition:background 0.5s;
+  -o-transition:background 0.5s;
+}
+.navbar-box li:not(:nth-child(2)) a:before{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #036361;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.navbar-box li:not(:nth-child(2)) a:hover{
+  color:#1fa690;  
+  background: #fff;  
+  -webkit-transition: all 0.3s; 
+  -moz-transition: all 0.3s; 
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; 
+  transition: all 0.3s;
+}
+.navbar-box li:not(:nth-child(2)):hover a:before{
+  left:10%; 
+  bottom: 0px; 
+  content: ""; 
+  width:80%;
+}
+@media only screen and (max-width: 480px){
+     .navbar-box li:not(:nth-child(2)):hover a:before{
+        left:0%; 
+        width:100%;
+     }
+}

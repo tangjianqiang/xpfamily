@@ -1,0 +1,1 @@
+document.writeln("<script src=\"/template/default/js/webPublic-en-1217.js\"></script>");

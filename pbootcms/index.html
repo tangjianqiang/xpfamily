@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!--让浏览器使用最新的IE内核进行渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口宽度等于当前设备宽度，默认缩放比为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 允许默认手机-->
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 网站描述及关键词 -->
+    <meta name="description" content="{pboot:pagedescription}" />
+    <meta name="keywords" content="{pboot:pagekeywords}" />
+    <title>{pboot:pagetitle}</title>
+    <!-- 字体库-->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <!-- 导入Bootstrap核心CSS文件 -->
+    <link href="{pboot:sitetplpath}/style/bootstrap.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/bootstrapValidator.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="{pboot:sitetplpath}/style/animate.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.carousel.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.theme.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/style.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/index.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/base.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="{pboot:sitetplpath}/js/jquery.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrap.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrapValidator.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/owl.carousel.js"></script>
+    <script src="{pboot:sitetplpath}/js/jquery.lazyload.js"></script>
+    <script src="{pboot:sitetplpath}/js/wow-animate.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/public.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-box" role="navigation">
+        <div class="container"> 
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle hamburger hamburger-close" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar hamburger-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar hamburger-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-logo" href="#">
+                <img src="{pboot:sitetplpath}/picture/xingpu-index-logo.png" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+			  <li class="active"><a href="{pboot:sitepath}/">首页</a></li>     
+                 {pboot:nav num=8 parent=0}
+                          <li><a href="[nav:link]">[nav:name]</a></li>
+                  {/pboot:nav}				 
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="owl-banner">
+        <div class="owl-carousel owl-theme">
+		{pboot:slide num=4 gid=1}
+		     <div class="item">
+                <a href="[slide:link]" class="slide-item" target="_blank" style="background-image:url([slide:src]);">                   
+                    <img class="lazyOwl" data-src="wap-[slide:src]" src="wap-[slide:src]" alt="banner"/>
+                </a>
+            </div>
+		{/pboot:slide} 
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>XING PU RELEASE</h1>
+                <p><span>杏璞发布</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-75 pad-rt wow fadeInUp">
+               <div class="crowd-left-img">
+                   <div class="owl-banner2">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="lazyOwl" data-src="picture/index-news.png" src="picture/index-news.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="lazyOwl" data-src="picture/index-news.png" src="picture/index-news.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="lazyOwl" data-src="picture/index-news.png" src="picture/index-news.png" alt="banner"/>
+                                </a>
+                            </div>
+                                    <div class="item">
+                                <a href="javascript:void(0);" class="slide-item" target="_blank">
+                                    <img class="lazyOwl" data-src="picture/index-news.png" src="picture/index-news.png" alt="banner"/>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 xs-75 box-shadow wow fadeInUp">
+               <div class="crowd-right-list">
+                  <div class="crowd-right-index-list">
+                      <div>
+                           <div class="crowd-time">2020.11.06</div>
+                           <h2>双11大幕开启，杏璞品牌11周年震撼献礼</h2>
+                           <p>近年来，“国潮复兴”的口号被越来越多的媒体提起，根据去年《百度国潮骄傲大数据》显示，在2009到2019的十年...</p>
+                      </div>
+                      <div>
+                           <ul>
+                               <li><a href="">杏璞庄园与慧学教育达成战略合作</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞品牌受邀参加2020第六届母婴生态大会</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞受邀参加樱桃严选找货节，为品牌赋能</a><span>2020.11.06</span></li>
+                               <li><a href="">杏璞受邀参加樱桃严选找货节，为品牌赋能</a><span>2020.11.06</span></li>
+                           </ul>
+                      </div>
+                  </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>COMPREHEND XING PU</h1>
+                <p><span>认识杏璞</span></p>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two pad-lt wow fadeInUp">
+               <div class="crowd-left-jianjie">
+                  <div class="crowd-left-index-jianjie">
+                      <div>
+                           <h2>企业简介</h2>
+                           <div class="crowd-line"></div>
+                           <p>
+                              <span>南京杏璞庄园在成立前期，缔造者们就开始对肌肤护理市场进行深入的分析研究，对产品的定位进行反复斟酌和比对，在总结单一护肤产品的不足以及现有功能性护肤产品的成分特点后，最终将目光聚焦在天然草本上。</span><br>
+                              <span class="max-768">天然草本在安全性方面有着其他成分无可比拟和替代的优势，安全是用户最关心的话题，同时也是产品的生命线。其次，中草本在排毒，调理，滋养肌肤等方面有着独到的天然优势。因此，将产品定位于天然草本护肤，安全高效，同时实现多效合一，成为杏璞庄园从事...</span>
+                           </p>
+                           <div class="crowd-details"><span><a href="">查看详情</a></span></div>
+                      </div>
+                  </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-sm-6 col-xs-12 index-two box-shadow wow fadeInUp">
+               <div class="crowd-right-img">
+                   <img class="lazy" data-original="picture/index-about-one.png" src="picture/lazy.gif" alt="">
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="container minWidth">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>HEALTH TEAM</h1>
+                <p><span>健康团队</span></p>
+            </div>
+        </div>
+        <div class="owl-team">
+              <div class="owl-carousel owl-theme">
+                  <div class="item">
+                      <div class="row">
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n1.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>主任中医师徐旵东</h2>
+                                       <p>省名老中医，省内科中医委员会副主任...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n2.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>国家高级育婴师郝焰娟</h2>
+                                       <p>国家高级育婴师，累计指导8126名宝妈科学...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n3.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>健康管理师王凯旋</h2>
+                                       <p>国家认证高级健康管理师...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n4.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>中药师李存玉</h2>
+                                       <p>中药学博士，南京中医药大学副教授...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n5.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>产康师戴康盛</h2>
+                                       <p>国家认证产康师，产后康复...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n6.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>健身教练沈叫练</h2>
+                                       <p>全国健美冠军，网红健身教练...</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n1.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>主任中医师徐旵东</h2>
+                                       <p>省名老中医，省内科中医委员会副主任...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n2.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>国家高级育婴师郝焰娟</h2>
+                                       <p>国家高级育婴师，累计指导8126名宝妈科学...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n3.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>健康管理师王凯旋</h2>
+                                       <p>国家认证高级健康管理师...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n4.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>中药师李存玉</h2>
+                                       <p>中药学博士，南京中医药大学副教授...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n5.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>产康师戴康盛</h2>
+                                       <p>国家认证产康师，产后康复...</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-6 index-three wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s">
+                              <div class="crowd-team-box box-shadow">
+                                  <a href=""><img class="lazy" data-original="picture/index-doc-n6.png" src="picture/lazy.gif" alt=""></a>
+                                  <div class="crowd-mask">
+                                       <h2>健身教练沈叫练</h2>
+                                       <p>全国健美冠军，网红健身教练...</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>HEALTHY PARENTING</h1>
+                <p><span>健康育儿</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 index-four wow fadeInLeft">
+                <div class="crowd-yuer-box">
+                     <div class="crowd-left-yuer-ii">
+                         <div class="yuer-ii-iiker-l">
+                              <div class="yuer-ii-block">
+                                   <a href="">
+                                       <img class="lazy" data-original="picture/index-yuer-r1.png" src="picture/lazy.gif" alt="">
+                                       <div class="yuer-ii-mask">
+                                               <img src="picture/xingpu-mask-logo.png" alt="">
+                                               <span>宝宝湿疹</span>
+                                       </div> 
+                                   </a>
+                              </div>
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r5.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>肌肤健康</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                         </div>
+                         <div class="yuer-ii-iiker-r">
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r2.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>辅食食谱</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r6.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>宝宝睡眠</span>
+                                      </div> 
+                                  </a>
+                              </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 index-four wow fadeInRight">
+                <div class="crowd-yuer-box">
+                    <div class="crowd-right-yuer-ii">
+                         <div class="yuer-ii-iiker-l">
+                              <div class="yuer-ii-block">
+                                   <a href="">
+                                       <img class="lazy" data-original="picture/index-yuer-r3.png" src="picture/lazy.gif" alt="">
+                                       <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>育儿图谱</span>
+                                       </div> 
+                                   </a>
+                              </div>
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r7.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>母婴推荐</span>
+                                       </div>
+                                  </a>
+                              </div>
+                         </div>
+                         <div class="yuer-ii-iiker-r">
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r4.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>产后修复</span>
+                                      </div>
+                                  </a>
+                              </div>
+                              <div class="yuer-ii-block">
+                                  <a href="">
+                                      <img class="lazy" data-original="picture/index-yuer-r8.png" src="picture/lazy.gif" alt="">
+                                      <div class="yuer-ii-mask">
+                                            <img src="picture/xingpu-mask-logo.png" alt="">
+                                            <span>启蒙音乐</span>
+                                      </div>
+                                  </a>
+                              </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>PRODUCT</h1>
+                <p><span>杏璞产品</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-lg index-five wow fadeInUp">
+                <div class="crowd-product-box">
+                     <a href=""><img class="lazy" data-original="picture/index-pro-p1.png" src="picture/lazy.gif" ></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-mg index-five wow fadeInUp">
+                <div class="crowd-product-box">
+                     <div class="product-box-ii pad-al box-shadow">
+                          <h2>专为宝宝订制</h2>
+                          <p>杏璞庄园系列产品成分天然，各批次均通过国家权威检测机构严苛检测，绿色安全，品质保障。 </p>
+                          <div class="crowd-details"><a href="">查看详情</a></div>
+                     </div>
+                     <div class="product-mid-ii"><a href=""><img class="lazy" data-original="picture/index-pro-p3.png" src="picture/lazy.gif" ></a></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-impot-rg index-five wow fadeInUp">
+                <div class="crowd-product-box">
+                     <div class="product-box-ii mag-al">
+                         <a href=""><img class="lazy" data-original="picture/index-pro-p2.png" src="picture/lazy.gif" ></a>
+                     </div>
+                     <div class="product-box-ii">
+                         <a href=""><img class="lazy" data-original="picture/index-pro-p4.png" src="picture/lazy.gif" ></a>
+                     </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>CONTACT US</h1>
+                <p><span>联系我们</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12 col-form-lg index-six wow fadeInUp">
+                <div class="crowd-content-box">
+                    <div class="content-box-ii">
+                         <a href=""><img class="lazy" data-original="picture/index-contact-map.png" src="picture/lazy.gif" ></a>
+                         <div class="crowd-mask">
+                             客服热线:400-089-8809&nbsp;公司地址:南京市秦淮区夹岗双龙科技产业园6幢2单元6楼
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 col-form-rg index-six wow fadeInUp">
+                <div class="crowd-content-box">
+                     <div class="content-form-control">
+                          <form class="form-horizontal" role="form" id="form-test">
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="name" name="username" placeholder="姓名:">
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="tel" name="telphone" placeholder="电话:">
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="message" name="message" placeholder="留言:">
+                                   </div>
+                               </div>
+                               <button type="submit" name="submit" class="btn btn-default offer-sub" id="offer-sub">立即提交</button>
+                          </form>
+                     </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="container-footer foot-wrap">
+         <div class="container">
+             <div class="row">
+                 <div class="row-content-top-log col-xs-12">
+                      <h2 class="wow bounce" data-wow-delay="2s"><img src="picture/xingpu-index-logo2.png" class="foot-xpImg" alt=""></h2>
+                      <div class="footer-line"><span></span></div>
+                 </div>
+                 <div class="row-content-top-log footer-pad col-xs-12">
+                      <div class="footer-content-al">
+                           <div class="content-l">
+                               <p><span>杏璞庄园生物科技有限公司</span></p>
+                               <p class="xp-pd xingpu-tel">400-089-8809</p>
+                               <p class="xp-pd xingpu-address">南京市秦淮区夹岗双龙科技产业园6幢2单元6楼</p>
+                           </div>
+                           <div class="content-r">
+                               <img src="picture/xingpu-weixin.png" class="foot-wxImg" alt="">
+                               <span>官方微信公众号</span>
+                           </div>
+                      </div>
+                 </div>
+                 <div class="row-content-top-log footer-pad2 col-xs-12">
+                     <ul>
+                         <li><a href="">首页</a><span>|</span><a href="">认识杏璞</a><span>|</span><a href="">杏璞文化</a><span>|</span><a href="">杏璞育儿</a><span>|</span><a href="">健康团队</a><span>|</span><a href="">杏璞产品</a><span>|</span><a href="">新闻动态</a><span>|</span><a href="">人才招聘</a><span>|</span><a href="">联系我们</a></li>
+                     </ul>
+                     <div class="footer-copyRight">Copyright©2017 南京杏璞庄园 版权所有  备案号：<a href="">苏ICP备13053562号-1</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </footer>
+  </body>
+</html>

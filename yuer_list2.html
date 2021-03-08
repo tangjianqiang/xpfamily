@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <!--让浏览器使用最新的IE内核进行渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设置视口宽度等于当前设备宽度，默认缩放比为1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 允许默认手机-->
+    <meta name="toTop" content="true">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 网站描述及关键词 -->
+    <meta name="description" content="{pboot:pagedescription}" />
+    <meta name="keywords" content="{pboot:pagekeywords}" />
+    <title>{pboot:pagetitle}</title>
+    <!-- 字体库-->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet">
+    <!-- 导入Bootstrap核心CSS文件 -->
+    <link href="{pboot:sitetplpath}/style/bootstrap.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/bootstrapValidator.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/animate.min.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.carousel.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/owl.theme.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/style.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/index_4.css" rel="stylesheet">
+    <link href="{pboot:sitetplpath}/style/base.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="{pboot:sitetplpath}/js/jquery.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrap.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/bootstrapValidator.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/owl.carousel.js"></script>
+    <script src="{pboot:sitetplpath}/js/jquery.lazyload.js"></script>
+    <script src="{pboot:sitetplpath}/js/wow-animate.min.js"></script>
+    <script src="{pboot:sitetplpath}/js/public.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-box" role="navigation">
+        <div class="container"> 
+        {include file=comm/head.html}
+        <div class="collapse navbar-collapse wow fadeInUp" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="{pboot:sitepath}/">首页</a></li>
+                <li><a href="/about/">认识杏璞</a></li>
+                <li><a href="/culture/">杏璞文化</a></li>
+                <li class="active"><a href="/yuer/">杏璞育儿</a></li>
+                <li><a href="/team/">健康团队</a></li>
+                <li><a href="/product/">杏璞产品</a></li>
+                <li><a href="/news/">杏璞发布</a></li>
+                <li><a href="/recruit/">人才招聘</a></li>
+                <li><a href="/contact/">联系我们</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container-yuer">
+        <div class="xingpu-yuer">{pboot:sort scode=11}
+             <div class="banner-maxWidth100">
+                  <a href="[sort:outlink]" class="slide-item" style="background-image:url({sort:pic});">
+                      <img class="lazy" data-original="{sort:ico}" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                  </a>
+             </div>{/pboot:sort}
+        </div>
+    </div>
+    <div class="container">
+        <div class="index-title wow fadeInUp">
+            <div class="center-index-title">
+                <h1>PARENTING KNOWLEDGE</h1>
+                <p><span>育儿知识</span></p>
+            </div>
+        </div>
+        <div class="row">
+          <!-- 新闻列表 -->
+           <ul>
+               {pboot:list scode=11 num=7 order=date page=1}
+               <li class="news wow fadeInUp">
+                   <div class="col-md-4 col-sm-12 col-xs-12 news-one">
+                        <a href="[list:link]">
+                            <div class="news-left-img">
+                                 <img class="lazy" data-original="[list:ico]" src="{pboot:sitetplpath}/picture/lazy.gif" alt="">
+                            </div>
+                        </a>
+                   </div>
+                   <div class="col-md-8 col-sm-12 col-xs-12 news-one">
+                        <div class="news-rigt-list">
+                             <div class="news-content-wrap">
+                                  <h2><a href="[list:link]">[list:title len=45 more='...']</a></h2>
+                                  <p>[list:description len=65 more='...']</p>
+                                  <div class="content-wrap-details">
+                                       <span>[list:date style=Y-m-d]</span>
+                                       <a href="[list:link]">了解更多&nbsp;></a>
+                                  </div>
+                             </div>
+                        </div>
+                   </div>
+               </li>
+               {/pboot:list}
+           </ul>
+           <div class="news-pageNext"><ul>
+                       <li><a href="{page:index}">首页</a></li>
+                       <li><a href="{page:pre}">上一页</a></li>
+                       <li class="page-list"><a href="{sort:link}">{page:current}</a></li>
+                       <li><a href="{page:next}">下一页</a></li>
+                  <li><a href="{page:last}">尾页</a></li></ul>
+           </div>
+      </div>
+    </div>
+    <footer class="container-footer foot-wrap mag-96">
+         {include file=comm/foot.html}
+    </footer>
+  </body>
+</html>
